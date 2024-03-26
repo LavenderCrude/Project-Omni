@@ -38,8 +38,3 @@ document.querySelectorAll(".img-setting")[lastImageNumber - 1].style.padding="10
 
 
 document.querySelectorAll(".story-container img")[0].style.marginLeft="20px";
-
-
-
-
-
