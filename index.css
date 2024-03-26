@@ -43,8 +43,7 @@ body {
     padding-left: -12px;
 }
 .story-container{
-    display: inline-flex;
-
+    display: flex;
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
