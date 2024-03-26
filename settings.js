@@ -2,6 +2,7 @@
 document.querySelector(".section-2").style.marginTop="120px";
 var x = document.querySelectorAll(".privacy-settings");
 document.querySelectorAll(".privacy-settings")[0].style.marginTop = "50px";
+document.getElementsByClassName(".section-2").style.marginTop = "10px";
 
 // Function to adjust margin based on document width
 function adjustMargin() {
@@ -18,10 +19,9 @@ adjustMargin();
 window.addEventListener('resize', adjustMargin);
 
 
+
 let lastPrivacy = document.querySelectorAll(".privacy-settings").length;
-
 document.querySelectorAll(".privacy-settings")[lastPrivacy - 1].style.marginBottom = "120px";
-
 function goBack() {
     window.history.back();
 }
