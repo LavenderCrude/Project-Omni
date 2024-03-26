@@ -19,9 +19,6 @@ adjustMargin();
 window.addEventListener('resize', adjustMargin);
 
 
-
-let lastPrivacy = document.querySelectorAll(".privacy-settings").length;
-document.querySelectorAll(".privacy-settings")[lastPrivacy - 1].style.marginBottom = "120px";
 function goBack() {
     window.history.back();
 }
