@@ -131,7 +131,9 @@ body {
     font-size: 15px;
     color: #676565;
 }
-
+.section-2{
+    margin-bottom: 150px;
+}
 @media screen and (min-width: 768px) {
     .navbar {
         position: fixed;
@@ -160,6 +162,8 @@ body {
     #back-button {
         display: none;
     }
-
+    .section-2{
+        margin-bottom:0;
+    }
 
 }
