@@ -32,7 +32,14 @@ for (var i = 0; i < numberOfImg; i++) {
   document.querySelectorAll(".post-detail")[i].innerHTML = slicedContent;
 }
 
+document.querySelectorAll(".img-setting")[0].style.marginTop=0;
 var lastImageNumber = document.querySelectorAll(".img-setting").length;
 document.querySelectorAll(".img-setting")[lastImageNumber - 1].style.padding="10px 0px 90px 0px";
+
+
+document.querySelectorAll(".story-container img")[0].style.marginLeft="20px";
+
+
+
 
 
