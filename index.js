@@ -32,9 +32,24 @@ for (var i = 0; i < numberOfImg; i++) {
   document.querySelectorAll(".post-detail")[i].innerHTML = slicedContent;
 }
 
-document.querySelectorAll(".img-setting")[0].style.marginTop=0;
 var lastImageNumber = document.querySelectorAll(".img-setting").length;
-document.querySelectorAll(".img-setting")[lastImageNumber - 1].style.padding="10px 0px 90px 0px";
+document.querySelectorAll(".img-setting")[lastImageNumber - 1].style.padding = "10px 0px 120px 0px";
 
 
-document.querySelectorAll(".story-container img")[0].style.marginLeft="20px";
+document.querySelectorAll(".story-container img")[0].style.marginLeft = "20px";
+
+
+
+// Define the media query
+var mq = window.matchMedia("(max-width: 768px)");
+// Function to handle changes in screen size
+function handleScreenSizeChange(mq) {
+  if (mq.matches) {
+    // Apply specific settings when the screen size is 768px or wider
+    document.querySelectorAll(".img-setting")[0].style.marginTop = 0;
+  }
+}
+// Call the handler initially to apply settings based on the current screen size
+handleScreenSizeChange(mq);
+// Add a listener for changes in screen size
+mq.addListener(handleScreenSizeChange);
